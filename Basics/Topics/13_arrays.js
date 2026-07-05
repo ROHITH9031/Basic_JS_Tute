@@ -41,3 +41,78 @@
 
 // ARRAY ITERATION SEARCHING AND TRANSFORMATION.
 
+// let fruits = ["apple","banana","kiwi"];
+
+// forEach
+
+// fruits.forEach((item,index)=> {
+//     console.log("Item: ",item,"Index: ",index);
+    
+// });
+
+// fruits.forEach(function fruit(item) {
+    
+
+//     console.log("Item: ",item);
+    
+// });
+
+// 2.MAP
+
+// let numbers = [1,2,3,4];
+// let double = numbers.map((num)=> num*2);
+// console.log(double);
+
+// let num1 = [];
+// for(let num of numbers){
+//     num1.push(num);
+    
+       
+// }
+// console.log(num1);
+
+
+
+// FILTER
+// let numbers = [1,2,3,5,4];
+// let evenNumbers = numbers.map((num)=>{
+//     return num%2==0;
+// });
+// console.log(evenNumbers);
+
+// FIND 
+
+// let largeNumbers = numbers.find((num) =>{
+//     return num > 3;  // returns 1st large number
+// });
+// console.log(largeNumbers);
+
+//  INDEXOF
+
+// let fruits = ["apple","banana","kiwi"];
+// let index = fruits.indexOf(("kiwi"));
+// console.log(index);
+// console.log(fruits.indexOf("kiwi"));
+
+
+//  sort
+
+// let numbers = [10,5,1,7,,3,9];
+// // console.log(numbers.sort());
+// numbers.sort((a,b)=>a-b);
+// console.log(numbers);
+
+//  Real example
+
+const students = [
+    {name: "rohith",score: 90},
+    {name: "yashith",score: 95},
+    {name: "rocky",score: 80},
+
+];
+
+const passStudents = students.filter((student)=>student.score>=81)
+console.log(passStudents);
+console.log(passStudents.map(s=>s.name));
+
+

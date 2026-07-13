@@ -33,3 +33,4 @@ fetch("https://jsonplaceholder.typicode.com/posts111")
     })
     .then(data => console.log(data))
     .catch(error => console.error('Error fetching data: ', error));
+    
